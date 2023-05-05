@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
+
+
+/* html, body { height: 100%; } */
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+.mdc-button{
+    margin: 5px !important;
+}
+.mat-mdc-form-field{
+    width: 100%;
+}
+.content{
+    display: block !important;
+}
+a{
+    color: white !important;
+padding: 1%;
+}
+
+
+html {
+ height: 100%;
+ box-sizing: border-box;
+}
+    
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    box-sizing: inherit;
+    padding-bottom: 4rem;
+ }
+ app-root {
+        margin: 0 auto;
+    }

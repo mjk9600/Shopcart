@@ -1,0 +1,31 @@
+<section>
+  <div class="text-center container py-5z">
+    <h4 class="mt-4 mb-5"><strong>Bestsellers</strong></h4>
+    <mat-grid-list cols="4" class="container mt-2">
+      <mat-grid-tile *ngFor="let card of productlist">
+        <div [ngClass]="card.published == false ? 'd-none' : 'd-block'">
+          <div class="col-1 col-md-12 mb-4">
+            <div class="card m-2 mb-2">
+              <div
+                class="bg-image ripple ripple-surface ripple-surface-light"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  mat-card-md-image
+                  src="{{ 'data:image/jpeg;base64,' + card.p_image }}"
+                  class="w-100"
+                />
+              </div>
+              <p>
+                {{ card.p_name }}<br />
+                {{ card.pid }}<br />
+                {{ card.p_price | currency : "INR" }}<br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</section>

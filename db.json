@@ -1,0 +1,341 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Aspire",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "testuser",
+      "name": "Test User",
+      "password": "Test@1234",
+      "email": "test@in.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "batman",
+      "name": "Bruce",
+      "password": "Test@1233",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "ntuser",
+      "name": "ramesh",
+      "password": "Test@1234",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "mukesh",
+      "name": "kushava",
+      "password": "Mukesh@9000",
+      "email": "tcbl@gmail.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "peter",
+      "name": "peter",
+      "password": "Peter@123",
+      "email": "peter123@gmail.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "harvey",
+      "name": "Harvey",
+      "password": "Harvey@123",
+      "email": "Harvey@gmail.com",
+      "role": "user",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "rakhesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 2,
+      "name": "rahul",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 3,
+      "name": "ramesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 4,
+      "name": "rahim",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 5,
+      "name": "robert",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 4,
+      "name": "rahim",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 5,
+      "name": "robert",
+      "Creditlimit": 1000
+    }
+  ],
+  "products": [
+    {
+      "uid": "admin",
+      "id": 61,
+      "name": "admin",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "98669",
+      "category": "ef",
+      "isactive": true
+    },
+    {
+      "uid": "admin",
+      "id": 62,
+      "name": "ewf",
+      "image": "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg",
+      "price": "20000",
+      "category": "footware",
+      "isactive": true
+    },
+    {
+      "uid": "admin",
+      "id": 64,
+      "name": "footware",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "1221",
+      "category": "jimmy",
+      "isactive": true
+    },
+    {
+      "uid": "admin",
+      "id": 65,
+      "name": "bee",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "1221",
+      "category": "fv",
+      "isactive": true
+    },
+    {
+      "name": "footware",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "1221",
+      "category": "footwre",
+      "isactive": true,
+      "id": 77
+    },
+    {
+      "uid": "admin",
+      "id": 78,
+      "name": "naro",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "98669",
+      "category": "ef",
+      "isactive": true
+    },
+    {
+      "uid": "admin",
+      "id": 79,
+      "name": "footware",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "1221",
+      "category": "fv",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 88,
+      "name": "puma",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "122222",
+      "category": "shoo",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 89,
+      "name": "niq",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "3000",
+      "category": "shoes",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 90,
+      "name": "Jordan",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "2323",
+      "category": "shoes",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 88,
+      "name": "puma",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "122222",
+      "category": "shoo",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 89,
+      "name": "niq",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "3000",
+      "category": "shoes",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 90,
+      "name": "Jordan",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "2323",
+      "category": "shoes",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 88,
+      "name": "puma",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "122222",
+      "category": "shoo",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 89,
+      "name": "niq",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "3000",
+      "category": "shoes",
+      "isactive": true
+    },
+    {
+      "uid": "mukesh",
+      "id": 90,
+      "name": "Jordan",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp",
+      "price": "2323",
+      "category": "shoes",
+      "isactive": true
+    },
+    {
+      "uid": "fgsdf",
+      "id": 91,
+      "name": "grfb",
+      "image": "sdfg",
+      "price": "234",
+      "category": "efrg",
+      "isactive": true
+    },
+    {
+      "uid": "harvey",
+      "id": 92,
+      "name": "efd",
+      "image": "fd",
+      "price": "123",
+      "category": "wdf",
+      "isactive": true
+    },
+    {
+      "uid": "harvey",
+      "id": 93,
+      "name": "wed",
+      "image": "C:\\fakepath\\image.png",
+      "price": "123",
+      "category": "sefd",
+      "isactive": true
+    },
+    {
+      "uid": "harvey",
+      "id": 94,
+      "name": "serfgfrg",
+      "image": "C:\\fakepath\\Screenshot from 2023-04-07 17-40-27.png",
+      "price": "1231",
+      "category": "asdvgsdv",
+      "isactive": true
+    },
+    {
+      "uid": "harvey",
+      "id": 95,
+      "name": "suit",
+      "image": "C:\\fakepath\\image.png",
+      "price": "1111",
+      "category": "wear",
+      "isactive": true
+    }
+  ]
+}

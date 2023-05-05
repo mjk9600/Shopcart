@@ -1,0 +1,35 @@
+
+<!-- Sidebar -->
+<div  *ngIf="isMenuVisible" role="banner">
+<div class="w3-sidebar bg-dark w3-bar-block mt-5" id="myDIV"style="width:25%">
+  <h3 class="text-light">Hello, {{userId}}</h3>
+  <hr class="menu-header">
+  <!-- <a routerLink="/dashbord" class="w3-bar-item w3-button">Home</a> -->
+
+      <!-- Admin Menu -->
+
+  <a *ngIf="isadmin" routerLink="/product/{{userId}}" class="w3-bar-item w3-button">Product Testing</a>
+  <a *ngIf="isadmin" routerLink="/user/{{userId}}" class="w3-bar-item w3-button">User Listing</a>
+
+      <!-- Vendor Menu -->
+
+  <a *ngIf="isuser" routerLink="/home/{{userId}}" class="w3-bar-item w3-button">Product Status</a>
+  <a *ngIf="isuser" routerLink="/prdconfig/{{userId}}" class="w3-bar-item w3-button">Product Configuration</a>
+  <a routerLink="/login" class="w3-bar-item w3-button mt-5">Log Out</a>
+</div>
+</div>
+
+
+<!-- 
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("w3-button");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script> -->

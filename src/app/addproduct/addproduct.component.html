@@ -1,0 +1,94 @@
+<h1 mat-dialog-title>product</h1>
+
+<form
+  [formGroup]="newProduct"
+  enctype="multipart/form-data"
+  (ngSubmit)="addproduct()"
+>
+  <div mat-dialog-content>
+    <section *ngIf="userId !== 'admin'">
+      <mat-form-field class="d-none">
+        <mat-label>Vendor name</mat-label>
+        <input
+          placeholder="uid"
+          matInput
+          formControlName="uid"
+          value="{{ userId }}"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input placeholder="Name" matInput formControlName="name" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Price</mat-label>
+        <input placeholder="Price" matInput formControlName="price" />
+      </mat-form-field>
+
+      <div>
+        <label for="formFileLg" class="form-label ms-3">Image*</label>
+        <input
+          class="form-control form-control-lg"
+          formControlName="image"
+          #file
+          id="formFileLg"
+          type="file"
+          (change)="onFileSelectedMethod($event)"
+        />
+      </div>
+
+      <!-- 
+  image upload
+ -->
+      <!-- <mat-form-field style="width: 100%;">
+  <mat-label>File matInput</mat-label>
+  <button mat-icon-button matPrefix (click)="f_input.click()">
+    <mat-icon>attach_file</mat-icon>
+  </button>
+  <input type="text" readonly matInput formControlName="image" />
+  <input
+    type="file"
+    multiple
+    hidden
+    #f_input
+    (change)="handleFileInputChange(f_input.files)"
+  />
+  <mat-error>this field is required</mat-error>
+</mat-form-field> -->
+    </section>
+    <section class="example-section" *ngIf="userId == 'admin'">
+      <br />
+      <mat-checkbox formControlName="isactive" class="example-margin"
+        >Approve Item</mat-checkbox
+      >
+    </section>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button type="submit" mat-raised-button color="primary" cdkFocusInitial>
+      Save
+    </button>
+  </div>
+</form>
+<!-- // *****88triel -->
+<!-- <form
+  [formGroup]="imageform"
+  (submit)="storeImg()"
+  enctype="multipart/form-data"
+>
+  <div class="image">
+    <input
+      type="file"
+      name="image"
+      (change)="onFileSelectedMethod($event)"
+      formControlName="image"
+      class="input"
+    />
+    <mat-error *ngIf="imageform.invalid"
+      >Please select an image file.</mat-error
+    >
+  </div>
+  <div>
+    <button mat-flat-button color="primary">Save</button>
+  </div>
+</form> -->
